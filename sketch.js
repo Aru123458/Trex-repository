@@ -12,7 +12,7 @@ var score=0;
 
 var gameOver, restart;
 
-localStorage["HighestScore"] = 0;
+A["HighestScore"] = 0;
 
 function preload(){
   trex_running =   loadAnimation("trex1.png","trex3.png","trex4.png");
