@@ -72,7 +72,7 @@ function draw() {
   //trex.debug = true;
   background(255);
   text("Score: "+ score, 500,50);
-  
+  text("High score"+localStorage["HighestScore"],410,50);
   if (gameState===PLAY){
     score = score + Math.round(getFrameRate()/60);
     ground.velocityX = -(6 + 3*score/100);
@@ -188,7 +188,7 @@ function reset(){
   if(localStorage["HighestScore"]<score){
     localStorage["HighestScore"] = score;
   }
-  console.log(localStorage["HighestScore"]);
+
   
   score = 0;
   
